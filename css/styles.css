@@ -5,6 +5,36 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+
+/* nav */
+.barra-superior{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+
+/* h1 */
+.titulo-principal{
+}
+
+
+/* li-nav */
+.elemento-lista-nav{
+}
+
+
+/* footer */
+.footer{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+
+}
+
 /* ___INDEX___ */
 
 
