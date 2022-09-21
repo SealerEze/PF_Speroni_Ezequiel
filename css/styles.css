@@ -9,8 +9,18 @@ a{
     text-decoration: none;
     color: black;
 }
+a:hover{
+    text-decoration: none;
+}
 li{
     list-style-type: none;
+}
+
+
+/* body */
+body{
+    background-color: black;
+    color: aliceblue;
 }
 
 /* nav */
@@ -19,15 +29,33 @@ li{
 }
 
 
+
 /* h1 */
 .titulo-principal{
+    color: white;
+    padding-bottom: 10px;
+    transition: background 1s linear;
+    border-radius: 30px;
 }
-
+.titulo-principal:hover{
+    background: linear-gradient(to top, #330867 0%, #30cfd0 100%);
+  transition: background 2s linear
+}
 
 /* li-nav */
 .elemento-lista-nav{
 }
 
+.elemento-lista-nav:hover{
+    background: linear-gradient(to top, #330867 0%, #30cfd0 100%);
+    border-radius: 30px;
+    padding-bottom: 5px;
+}
+
+/* imagenes */
+.imagen{
+    border-radius: 30px;
+}
 
 /* footer */
 .footer{
