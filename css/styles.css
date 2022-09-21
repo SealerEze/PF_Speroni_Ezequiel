@@ -19,13 +19,15 @@ li{
 
 /* body */
 body{
-    background-color: black;
-    color: aliceblue;
+    background-color: whitesmoke;
+    color: black;
 }
 
 /* nav */
 .barra-superior{
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background: rgb(255,56,98);
+    background: linear-gradient(352deg, rgba(255,56,98,1) 0%, rgba(255,255,255,1) 50%, rgba(0,212,255,1) 100%); 
+    box-shadow: 4px 6px 5px -3px rgba(0,0,0,0.43);
 }
 
 
@@ -34,22 +36,30 @@ body{
 .titulo-principal{
     color: white;
     padding-bottom: 10px;
-    transition: background 1s linear;
-    border-radius: 30px;
+    transition: 0.3s linear;
+    transition-property: background-color;
+    border-radius: 15px;
 }
 .titulo-principal:hover{
-    background: linear-gradient(to top, #330867 0%, #30cfd0 100%);
-  transition: background 2s linear
+    background: rgb(255,204,195);
+    background: radial-gradient(circle, rgba(255,204,195,1) 0%, rgba(149,173,255,1) 100%); 
+    border-radius: 30px;
+    opacity: 1
 }
 
 /* li-nav */
 .elemento-lista-nav{
+    border-radius: 15px;
+    transition: 0.3s linear;
 }
 
+
 .elemento-lista-nav:hover{
-    background: linear-gradient(to top, #330867 0%, #30cfd0 100%);
+    background: rgb(255,204,195);
+    background: radial-gradient(circle, rgba(255,204,195,1) 0%, rgba(149,173,255,1) 100%); 
     border-radius: 30px;
-    padding-bottom: 5px;
+    opacity: 1
+
 }
 
 /* imagenes */
@@ -59,8 +69,9 @@ body{
 
 /* footer */
 .footer{
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-
+    background: rgb(255,56,98);
+    background: linear-gradient(170deg, rgba(255,56,98,1) 0%, rgba(255,255,255,1) 50%, rgba(0,212,255,1) 100%);
+    box-shadow: 0px -7px 5px -3px rgba(0,0,0,0.43);
 }
 
 /* ___INDEX___ */
