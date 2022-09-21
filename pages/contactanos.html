@@ -20,7 +20,7 @@
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <h1 class="titulo-principal">
+      <h1 class="fw-bold display-5 titulo-principal">
         <a class="navbar href=" #">Contactate con Nosotros</a>
       </h1>
       <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
@@ -46,7 +46,7 @@
     </div>
   </nav>
 
-  <main>
+  <!-- <main>
     <section class="section__consulta">
       <h2>Dejanos tu consulta</h2>
       <label for="nombre">Nombre</label><input placeholder="Ezequiel" type="text" required id="nombre">
@@ -57,35 +57,42 @@
       <label for="consult">Dejanos tu consulta</label><textarea name="consult" id="consult" cols="30" rows="10"
         placeholder="No me gusta su pagina" required></textarea>
       <button type="submit">Enviar</button>
-    </section>
+    </section> -->
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
+    </div>
+      <label for="exampleFormControlInput1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu comentario</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button class="text-center" type="submit">Enviar</button>
 
-
-    <section class="section__informacion">
-      <ul>
-        <h3> Informacion de Contacto</h3>
-        <li> Telefono xx-xxxx-xxxx</li>
-        <li> Horarios 8:00 a 13:00</li>
-        <li>
-          <iframe
+    <section class="conteiner section__informacion">
+      <div class="row">
+        <h3 class="col-12 text-center"> Informacion de Contacto</h3>
+        <p class="col-12 text-center"> Telefono xx-xxxx-xxxx</p>
+        <p class="col-12 text-center">Horarios 8:00 a 13:00</p>
+        <iframe class="col-12 text-center"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.332920099211!2d-58.54143924523857!3d-34.63935657722408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc81240c8ddc5%3A0x1c7dacd6524818e2!2sCiudadela!5e0!3m2!1ses-419!2sar!4v1661359754720!5m2!1ses-419!2sar"
             width="400" height="320" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">Direccion</iframe>
-        </li>
-
-      </ul>
+          </div>
     </section>
   </main>
-  <footer class="container-fluid footer">
-    <ul class="row">
+  <footer class="container-fluid d-flex justify-content-around footer p-3 ">
+    <ul class="row ">
       <!-- alta poner <a> a Face, insta, yt -->
-      <li class="col-4">Facebook</li>
-      <li class="col-4">Instagram</li>
-      <li class="col-4">Twitter</li>
-      <li class="col-4">Youtube</li>
-      <li class="col-4">Twitch</li>
-      <li class="col-4">TikTok</li>
+      <li class="col-4"><a href=""><i class="bi bi-facebook"> Facebook</i></a></li>
+      <li class="col-4"><a href=""><i class="bi bi-instagram"> Instagram</i></a></li>
+      <li class="col-4"><a href=""><i class="bi bi-twitter"> Twitter</i></a></li>
+      <li class="col-4"><a href=""><i class="bi bi-youtube"> Youtube</i></a></li>
+      <li class="col-4"><a href=""><i class="bi bi-twitch"> Twitch</i></a></li>
+      <li class="col-4"><a href=""><i class="bi bi-tiktok"> TikTok</i></a></li>
     </ul>
-  </footer>
   <script src="../js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
