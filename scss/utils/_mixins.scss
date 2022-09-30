@@ -1,0 +1,32 @@
+@mixin media-movil {
+    @media (max-width: 576px) 
+    { @content; }
+}
+
+@mixin media-taplet-v {
+    @media (min-width: 576px)
+    { @content; }
+}
+
+@mixin media-tablet-h {
+    @media (min-width: 768px) 
+    { @content; }
+}
+
+@mixin media-escritorio {
+    @media (min-width: 992px)
+    { @content; }
+}
+
+@mixin media-escritorio-g{
+    @media (min-width: 1200px) 
+    { @content; }
+}
+
+
+@mixin flex($dir,$wrap,$just,$align){
+    display: flex;
+    flex-flow: $dir $wrap;
+    justify-content: $just;
+    align-items: $align; 
+}
