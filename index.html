@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
@@ -15,32 +17,28 @@
 <body>
 
   <header>
-    <nav class="barra-superior navbar navbar-expand-md">
-      <div class=" container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <h1 class="titulo-principal">
-          <a class="display-3 fw-bold" href="./index.html">Coder Rol</a>
+    <nav>
+      <div>
+        <h1>
+          <a href="./index.html">Coder Rol</a>
         </h1>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
-          <ul class="lista-nav navbar-nav">
+        <div>
+          <ul>
 
-            <li class="elemento-lista-nav">
-              <a class="fw-bold nav-link active" href="./pages/mapas.html">Mapas</a>
+            <li>
+              <a href="./pages/mapas.html">Mapas</a>
             </li>
-            <li class="elemento-lista-nav">
-              <a class="fw-bold nav-link active" href="./pages/objetos.html">Objetos</a>
+            <li>
+              <a href="./pages/objetos.html">Objetos</a>
             </li>
-            <li class="elemento-lista-nav">
-              <a class="fw-bold nav-link active" href="./pages/bestiario.html">Bestiario</a>
+            <li>
+              <a href="./pages/bestiario.html">Bestiario</a>
             </li>
-            <li class="elemento-lista-nav">
-              <a class="fw-bold nav-link active" href="./pages/contactanos.html">Contacto</a>
+            <li>
+              <a href="./pages/contactanos.html">Contacto</a>
             </li>
-            <li class="elemento-lista-nav">
-              <a class="fw-bold nav-link active" href="../pages/productos.html">Productos</a>
+            <li>
+              <a href="../pages/productos.html">Productos</a>
             </li>
           </ul>
 
@@ -53,15 +51,16 @@
     </div>
   </header>
   <Main>
-    <section class="section__principal">
-      <div class="container justify-content-center">
-        <article class="row article__comienzatuaventura">
+    <section>
+      <div>
+        <article>
           <div data-aos="fade-left">
-            <h2 class="col-12 text-center text-md-start fs-2 fw-bold p-3">Comienza tu aventura</h2>
+            <h2>Comienza tu aventura</h2>
           </div>
-          <div data-aos="fade-left" class="col-12 col-xl-6 order-xl-2 d-flex justify-content-center p-2"><img
-              class="imagen w-100" src="./assets/imagenes/aasimarvector.png" alt="aasimar"></div>
-          <p data-aos="fade-left" class="col-12 col-xl-6 order-xl-1 text-center text-md-start p-2">Lorem ipsum dolor
+          <div data-aos="fade-left">
+            <img src="./assets/imagenes/aasimarvector.png" alt="aasimar">
+          </div>
+          <p data-aos="fade-left">Lorem ipsum dolor
             sit amet
             consectetur adipisicing elit.
             Doloribus, praesentium
@@ -95,22 +94,21 @@
 
         </article>
       </div>
-      <div class="container justify-content-center">
-        <article class="row article__elclipdelasemana">
+      <div>
+        <article>
           <div data-aos="fade-left">
-            <h2 class="col-12 text-center fs-2 fw-bold">El clip de la semana</h2>
+            <h2>El clip de la semana</h2>
           </div>
-          <iframe class="p-3" width="921" height="518"
-            src="https://www.youtube.com/embed/LhFETREAvhc" title="Mighty Nein Animated Intro - Your Turn To Roll"
-            frameborder="0"
+          <iframe width="921" height="518" src="https://www.youtube.com/embed/LhFETREAvhc"
+            title="Mighty Nein Animated Intro - Your Turn To Roll" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </article>
       </div>
-      <div class="container">
-        <article class="row article__aventuradelasemana">
-          <div class="col-12 col-md-6 col-xl-8 order-md-2 order-xl-1 text-center text-md-start text-xl-end p-2">
-            <h2 data-aos="fade-left" class="col-12 text-center text-md-start text-xl-end fs-2 fw-bold p-2">Aventura de la semana</h2>
+      <div>
+        <article>
+          <div>
+            <h2 data-aos="fade-left">Aventura de la semana</h2>
             <p data-aos="fade-left">
               Lorem ipsum dolor
               sit amet
@@ -129,8 +127,8 @@
             </p>
           </div>
 
-          <div class="d-flex justify-content-center col-12 col-md-6 col-xl-4 order-md-1 p-4">
-            <img data-aos="fade-left" class="w-100 imagen" src="./assets/imagenes/unaparty.jpg" alt="unaparty">
+          <div>
+            <img data-aos="fade-left" src="./assets/imagenes/unaparty.jpg" alt="unaparty">
           </div>
       </div>
 
@@ -142,20 +140,32 @@
 
   </Main>
 
-  <footer class="footer container-fluid d-flex justify-content-around  p-3 ">
-    <ul class="row ">
+  <footer>
+    <ul>
       <!-- alta poner <a> a Face, insta, yt -->
-      <li class="fw-bold col-4"><a href=""><i class="bi bi-facebook"> Facebook</i></a></li>
-      <li class="fw-bold col-4"><a href=""><i class="bi bi-instagram"> Instagram</i></a></li>
-      <li class="fw-bold col-4"><a href=""><i class="bi bi-twitter"> Twitter</i></a></li>
-      <li class="fw-bold col-4"><a href=""><i class="bi bi-youtube"> Youtube</i></a></li>
-      <li class="fw-bold col-4"><a href=""><i class="bi bi-twitch"> Twitch</i></a></li>
-      <li class="fw-bold col-4"><a href=""><i class="bi bi-tiktok"> TikTok</i></a></li>
+      <li><a href=""><i class="bi bi-facebook"> Facebook</i></a></li>
+      <li><a href=""><i class="bi bi-instagram"> Instagram</i></a></li>
+      <li><a href=""><i class="bi bi-twitter"> Twitter</i></a></li>
+      <li><a href=""><i class="bi bi-youtube"> Youtube</i></a></li>
+      <li><a href=""><i class="bi bi-twitch"> Twitch</i></a></li>
+      <li><a href=""><i class="bi bi-tiktok"> TikTok</i></a></li>
     </ul>
+
   </footer>
+
+
+
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+
+
 </body>
+
+
 
 </html>
