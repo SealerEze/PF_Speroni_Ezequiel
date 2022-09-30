@@ -1,0 +1,38 @@
+/* nav */
+.barra-superior{
+    background: rgb(255,56,98);
+    background: linear-gradient(352deg, rgba(255,56,98,1) 0%, rgba(255,255,255,1) 50%, rgba(0,212,255,1) 100%); 
+    box-shadow: 4px 6px 5px -3px rgba(0,0,0,0.43);
+}
+
+
+
+/* h1 */
+.titulo-principal{
+    color: white;
+    padding-bottom: 10px;
+    transition: 0.3s linear;
+    transition-property: background-color;
+    border-radius: 15px;
+}
+.titulo-principal:hover{
+    background: rgb(255,204,195);
+    background: radial-gradient(circle, rgba(255,204,195,1) 0%, rgba(149,173,255,1) 100%); 
+    border-radius: 30px;
+    opacity: 1
+}
+
+/* li-nav */
+.elemento-lista-nav{
+    border-radius: 15px;
+    transition: 0.3s linear;
+}
+
+
+.elemento-lista-nav:hover{
+    background: rgb(255,204,195);
+    background: radial-gradient(circle, rgba(255,204,195,1) 0%, rgba(149,173,255,1) 100%); 
+    border-radius: 30px;
+    opacity: 1
+
+}

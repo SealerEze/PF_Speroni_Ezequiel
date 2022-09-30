@@ -1,95 +1,73 @@
-/* ---Reset---  */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-    color: black
-}
-a:hover{
-    text-decoration: none;
-}
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 
-/* body */
-body{
-    background-color: whitesmoke;
-    color: black;
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a a:hover {
+  text-decoration: none;
 }
 
 /* nav */
-.barra-superior{
-    background: rgb(255,56,98);
-    background: linear-gradient(352deg, rgba(255,56,98,1) 0%, rgba(255,255,255,1) 50%, rgba(0,212,255,1) 100%); 
-    box-shadow: 4px 6px 5px -3px rgba(0,0,0,0.43);
+.barra-superior {
+  background: rgb(255, 56, 98);
+  background: linear-gradient(352deg, rgb(255, 56, 98) 0%, rgb(255, 255, 255) 50%, rgb(0, 212, 255) 100%);
+  box-shadow: 4px 6px 5px -3px rgba(0, 0, 0, 0.43);
 }
-
-
 
 /* h1 */
-.titulo-principal{
-    color: white;
-    padding-bottom: 10px;
-    transition: 0.3s linear;
-    transition-property: background-color;
-    border-radius: 15px;
+.titulo-principal {
+  color: white;
+  padding-bottom: 10px;
+  transition: 0.3s linear;
+  transition-property: background-color;
+  border-radius: 15px;
 }
-.titulo-principal:hover{
-    background: rgb(255,204,195);
-    background: radial-gradient(circle, rgba(255,204,195,1) 0%, rgba(149,173,255,1) 100%); 
-    border-radius: 30px;
-    opacity: 1
+
+.titulo-principal:hover {
+  background: rgb(255, 204, 195);
+  background: radial-gradient(circle, rgb(255, 204, 195) 0%, rgb(149, 173, 255) 100%);
+  border-radius: 30px;
+  opacity: 1;
 }
 
 /* li-nav */
-.elemento-lista-nav{
-    border-radius: 15px;
-    transition: 0.3s linear;
+.elemento-lista-nav {
+  border-radius: 15px;
+  transition: 0.3s linear;
 }
 
-
-.elemento-lista-nav:hover{
-    background: rgb(255,204,195);
-    background: radial-gradient(circle, rgba(255,204,195,1) 0%, rgba(149,173,255,1) 100%); 
-    border-radius: 30px;
-    opacity: 1
-
+.elemento-lista-nav:hover {
+  background: rgb(255, 204, 195);
+  background: radial-gradient(circle, rgb(255, 204, 195) 0%, rgb(149, 173, 255) 100%);
+  border-radius: 30px;
+  opacity: 1;
 }
 
-/* imagenes */
-.imagen{
-    border-radius: 30px;
+.imagen {
+  border-radius: 30px;
 }
 
-/* footer */
-.footer{
-    background: rgb(255,56,98);
-    background: linear-gradient(170deg, rgba(255,56,98,1) 0%, rgba(255,255,255,1) 50%, rgba(0,212,255,1) 100%);
-    box-shadow: 0px -7px 5px -3px rgba(0,0,0,0.43);
+body {
+  background-color: whitesmoke;
+  color: rgb(0, 0, 0);
 }
 
-/* ___INDEX___ */
-
-
-
-/* ___BESTIARIO___ */
-
-
-/* ___CONTACTANOS___ */
-
-
-/* ___MAPAS___ */
-
-
-
-/* ___OBJETOS___ */
-
-
-
-/* ___PRODUCTOS___ */
+/*# sourceMappingURL=styles.css.map */
