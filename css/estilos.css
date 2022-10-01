@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: aliceblue;
+  color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 80%;
+  height: auto;
+}
+
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: black;
+  background-color: whitesmoke;
+}
+button button:hover {
+  background-color: papayawhip;
+}
+
+.header {
+  background-color: greenyellow;
+}
+.header .container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .nav .list-e {
+  display: inline;
+  margin: auto;
+}
+.header .container .nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: deepskyblue;
+}
+.header .container .nav a:hover {
+  color: blue;
+  background-color: crimson;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.header .container .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: black;
+  font-size: 2.5em;
+  text-align: center;
+}
+.header .container .logo .dado {
+  width: 40px;
+}
+
+#hero {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  color: white;
+  background-image: url("../assets/imagenes/hero2.webp"), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.9;
+}
+#hero h2 {
+  background-color: black;
+  border: solid 2px orangered;
+  border-radius: 15px;
+  padding: 3px 5px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

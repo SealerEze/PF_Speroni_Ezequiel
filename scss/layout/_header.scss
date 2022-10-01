@@ -1,8 +1,43 @@
-/* nav */
-.barra-superior{
-    background: rgb(255,56,98);
-    background: linear-gradient(352deg, rgba(255,56,98,1) 0%, rgba(255,255,255,1) 50%, rgba(0,212,255,1) 100%); 
-    box-shadow: 4px 6px 5px -3px rgba(0,0,0,0.43);
+.header{
+    background-color: greenyellow;
+        .container{
+            max-width: 1400px;
+            margin: auto;
+            @include flex (column, wrap, space-between, center);
+            .nav{
+                .list-e{
+                    display: inline;
+                    margin: auto;
+                }
+                a{
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: deepskyblue;
+                }
+                a:hover{
+                        color: blue;
+                        background-color: crimson;
+                        border: 1px solid black;
+                        border-radius: 10px;
+                }
+                
+        }
+        .logo{
+            margin: 0;
+            padding: 25px 30px;
+            font-weight: bold;
+            color: black;
+            font-size: 2.5em;
+            text-align: center;
+            .dado{
+                width: 40px;
+            }
+        }
+        
 }
+}
+
+
 
 

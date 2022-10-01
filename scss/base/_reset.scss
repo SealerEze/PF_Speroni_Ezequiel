@@ -1,20 +1,31 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-li{
-    list-style-type: none;
+h1{
+    font-size: 3em;
 }
-
+h2{
+    font-size: 2.5em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.2em;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: sans-serif;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+}
 a{
     text-decoration: none;
-    display: inline-block;
-    color: aqua;
 }
-
-
 img{
     width: 80%;
     height: auto;

@@ -1,0 +1,20 @@
+#hero{
+    @include flex(column, nowrap, center, center);
+    text-align: center;
+    height: 90vh;
+    color: white;
+    background-image: 
+        url("../assets/imagenes/hero2.webp"),
+        linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.5));
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        opacity: 0.9;
+        h2{
+            background-color: black;
+            border: solid 2px orangered;
+            border-radius: 15px;
+            padding: 3px 5px;
+            
+        }
+}
