@@ -8,3 +8,16 @@
         padding: 8px;
     }
 }
+
+@media (min-width: 992px){
+    .footer{
+    .list-footer{
+        display: inline;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: baseline;
+        margin: 50px;
+        padding: 8px;
+    }
+    }
+}

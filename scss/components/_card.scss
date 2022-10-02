@@ -117,4 +117,45 @@ align-items: center;
     }
 }
 
+}//------------------------Fin media de 992px
+
+
+@media (min-width: 1200px){
+
+    .caja-cartas{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        align-items: center;
+            
+            .carta-uno{
+                width: 30%;
+                height: auto;
+                .texto{
+                    display: block;
+                    color: aliceblue;
+                }
+            }
+        }
+        
+        .carta-dos{
+            width: 30%;
+            height: auto;
+            .texto{
+                display: block;
+                color: aliceblue;
+            }
+        }
+        
+        .carta-tres{
+            width: 30%;
+            height: auto;
+            .texto{
+                display: block;
+                color: aliceblue;
+            }
+        }
+
+
+
 }
