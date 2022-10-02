@@ -6,10 +6,16 @@ button{
     padding: 10px 30px;
     border-radius: 5px;
     border: 2px solid rgba(0,0,0,0.3);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: black;
-    background-color: whitesmoke;
-        button:hover{
-        background-color: papayawhip;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    color: orangered;
+    background-color: aliceblue;
 }
+button:hover{
+    background-color: orangered;
+    color:aliceblue;
+
 }
+
+
+
+

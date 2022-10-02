@@ -1,43 +1,54 @@
-.header{
-    background-color: greenyellow;
-        .container{
-            max-width: 1400px;
-            margin: auto;
-            @include flex (column, wrap, space-between, center);
-            .nav{
-                .list-e{
-                    display: inline;
-                    margin: auto;
-                }
-                a{
-                    padding: 5px 10px;
-                    text-decoration: none;
-                    font-weight: bold;
-                    color: deepskyblue;
-                }
-                a:hover{
-                        color: blue;
-                        background-color: crimson;
-                        border: 1px solid black;
-                        border-radius: 10px;
-                }
-                
-        }
-        .logo{
-            margin: 0;
-            padding: 25px 30px;
-            font-weight: bold;
-            color: black;
-            font-size: 2.5em;
-            text-align: center;
-            .dado{
-                width: 40px;
-            }
-        }
-        
+.header {
+  background-image: linear-gradient(to right, #994c0d 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply, multiply;
+  .container {
+    max-width: 1400px;
+    margin: auto;
+    @include flex(column, wrap, center, center);
+    .nav {
+      .list-e {
+        display: inline;
+        margin: auto auto;
+        font-weight: bold;
+        padding: 5px 5px;
+      }
+      a {
+        padding: 5px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: aliceblue;
+        border: solid aliceblue 1px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 3px 2px rgba(0, 0, 0, 0.5);
+      }
+      a:hover {
+        background-color: orangered;
+        border: 1px solid black;
+        border-radius: 15px;
+        color: aliceblue;
+      }
+    }
+    .logo {
+      margin: 0;
+      padding: 25px 30px;
+      font-weight: bold;
+      color: aliceblue;
+      font-size: 2.5em;
+      text-align: center;
+      text-shadow:3px 3px 10px rgba(0,0,0,0.5);
+      .dado{
+        width: 50px;
+        border-radius: 100px;
+        box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.5);
+      }
+    }
+  }
 }
+
+@media (min-width: 992px) {
+  .header {
+    .container {
+      @include flex(row, wrap, space-between, baseline);
+    }
+  }
 }
-
-
-
-

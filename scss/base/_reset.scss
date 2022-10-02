@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 h1{
     font-size: 3em;
 }
@@ -21,11 +24,24 @@ ul{
 body{
     font-family: sans-serif;
     background-color: aliceblue;
-    color: rgb(0, 0, 0);
 }
 a{
+    color: inherit;
     text-decoration: none;
 }
+    a:link{
+        color: aliceblue;
+    } 
+    a:visited {
+        color: orangered;
+    }
+    a:hover{
+        color: aliceblue;
+    } 
+    a:active{
+        color: orange;
+    }
+
 img{
     width: 80%;
     height: auto;
