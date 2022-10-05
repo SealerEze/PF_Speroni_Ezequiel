@@ -241,9 +241,12 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
-.header .container .nav .list-e {
-  display: inline;
-  margin: auto auto;
+.header .container .nav ul {
+  display: block;
+  justify-content: space-evenly;
+}
+.header .container .nav ul .list-e {
+  display: inline-block;
   font-weight: bold;
   padding: 5px 5px;
 }
@@ -285,6 +288,451 @@ button:hover {
     align-items: baseline;
   }
 }
+.articulo_leer-ficha {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.articulo_leer-ficha h2 {
+  text-align: center;
+  font-weight: bold;
+  color: orangered;
+}
+.articulo_leer-ficha .ficha-monstruo {
+  text-align: center;
+  padding: 15px;
+}
+.articulo_leer-ficha .ficha-monstruo img {
+  width: 100%;
+}
+.articulo_leer-ficha p {
+  text-align: center;
+}
+
+.crear-monstruo {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid black;
+  box-shadow: -1px -6px 14px 1px rgba(0, 0, 0, 0.29);
+}
+.crear-monstruo h2 {
+  text-align: center;
+  font-weight: bold;
+  color: orangered;
+}
+.crear-monstruo .osolechuza {
+  text-align: center;
+  padding: 15px;
+}
+.crear-monstruo .osolechuza img {
+  width: 100%;
+  border-radius: 30px;
+}
+.crear-monstruo p {
+  text-align: center;
+}
+
+.articulo__mapas-mundo {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.articulo__mapas-mundo h2 {
+  text-align: center;
+  font-weight: bold;
+  color: orangered;
+}
+.articulo__mapas-mundo .mapamundi {
+  text-align: center;
+  margin: 15px;
+  width: 90vw;
+}
+.articulo__mapas-mundo .mapamundi img {
+  border-radius: 15px;
+}
+.articulo__mapas-mundo p {
+  text-align: center;
+}
+
+.articulo__ciudades {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.articulo__ciudades .mapa-ciudad {
+  text-align: center;
+  padding: 15px;
+}
+.articulo__ciudades .mapa-ciudad img {
+  border-radius: 15px;
+  width: 80%;
+}
+.articulo__ciudades h2 {
+  text-align: center;
+  font-weight: bold;
+  color: orangered;
+}
+.articulo__ciudades p {
+  text-align: center;
+}
+
+.articulo__mazmorras {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.articulo__mazmorras h2 {
+  text-align: center;
+  font-weight: bold;
+  color: orangered;
+}
+.articulo__mazmorras p {
+  text-align: center;
+}
+.articulo__mazmorras .mapa-mazmorra {
+  text-align: center;
+  padding: 15px;
+}
+.articulo__mazmorras .mapa-mazmorra img {
+  border-radius: 15px;
+  width: 80%;
+}
+
+@media (min-width: 992px) {
+  .articulo__mapas-mundo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .articulo__mapas-mundo h2 {
+    width: 100%;
+  }
+  .articulo__mapas-mundo .mapamundi {
+    text-align: center;
+    margin: 15px;
+    width: 80vw;
+  }
+  .articulo__mapas-mundo p {
+    text-align: start;
+    width: 90vw;
+    padding: 20px;
+  }
+  .articulo__ciudades {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    box-shadow: -1px -6px 14px 1px rgba(0, 0, 0, 0.29);
+    padding: 15px;
+  }
+  .articulo__ciudades .mapa-ciudad {
+    text-align: center;
+    width: 50vw;
+  }
+  .articulo__ciudades .mapa-ciudad img {
+    height: 800px;
+  }
+  .articulo__ciudades h2 {
+    width: 100%;
+    padding: 30px;
+  }
+  .articulo__ciudades p {
+    text-align: end;
+    width: 45vw;
+    padding: 30px;
+  }
+  .articulo__mazmorras {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    box-shadow: -1px -6px 14px 1px rgba(0, 0, 0, 0.29);
+  }
+  .articulo__mazmorras h2 {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .articulo__mazmorras p {
+    text-align: start;
+    width: 60%;
+    padding: 15px;
+  }
+  .articulo__mazmorras .mapa-mazmorra {
+    text-align: center;
+    padding: 15px;
+    width: 40%;
+  }
+  .articulo__mazmorras .mapa-mazmorra img {
+    border-radius: 15px;
+    width: 100%;
+  }
+}
+.section_objetos {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.section_objetos .articulo_crear-objeto {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 20px;
+}
+.section_objetos .articulo_crear-objeto h2 {
+  text-align: center;
+  font-weight: bold;
+  color: orangered;
+}
+.section_objetos .articulo_crear-objeto p {
+  text-align: center;
+}
+.section_objetos .articulo_crear-objeto .botas {
+  text-align: center;
+  padding: 15px;
+}
+.section_objetos .articulo_crear-objeto .botas img {
+  border-radius: 30px;
+  width: auto;
+}
+
+.articulo_reliquias {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.articulo_reliquias h2 {
+  text-align: center;
+  font-weight: bold;
+  color: orangered;
+  margin: 10px;
+}
+.articulo_reliquias p {
+  text-align: center;
+}
+.articulo_reliquias .collar {
+  text-align: center;
+  padding: 15px;
+}
+.articulo_reliquias .collar img {
+  border-radius: 30px;
+}
+
+.articulo_obj-comunidad {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.articulo_obj-comunidad h2 {
+  text-align: center;
+  font-weight: bold;
+  color: orangered;
+}
+.articulo_obj-comunidad p {
+  text-align: center;
+}
+.articulo_obj-comunidad .anillo {
+  text-align: center;
+  padding: 15px;
+}
+.articulo_obj-comunidad .anillo .img-anillo {
+  border-radius: 30px;
+}
+
+@media (min-width: 992px) {
+  .section_objetos {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .section_objetos .articulo_crear-objeto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .section_objetos .articulo_crear-objeto p {
+    text-align: end;
+  }
+  .section_objetos .articulo_crear-objeto .botas {
+    margin: 15px;
+    float: right;
+  }
+}
+.articulo_reliquias {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+  box-shadow: -1px -6px 14px 1px rgba(0, 0, 0, 0.29);
+}
+.articulo_reliquias h2 {
+  width: 100%;
+}
+.articulo_reliquias p {
+  text-align: start;
+  width: 70%;
+  order: 2;
+}
+.articulo_reliquias .collar {
+  width: 30%;
+  order: 1;
+}
+
+.articulo_obj-comunidad {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+  box-shadow: -1px -6px 14px 1px rgba(0, 0, 0, 0.29);
+}
+.articulo_obj-comunidad h2 {
+  width: 100%;
+}
+.articulo_obj-comunidad p {
+  text-align: start;
+  width: 70%;
+}
+.articulo_obj-comunidad .anillo {
+  text-align: center;
+  width: 30%;
+}
+
+h1 {
+  text-align: center;
+  color: orangered;
+  font-weight: bold;
+}
+
+.formulario {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.formulario .nombre {
+  padding: 10px;
+  font-weight: bold;
+  width: 80vw;
+}
+.formulario .mail {
+  padding: 10px;
+  font-weight: bold;
+  width: 80vw;
+}
+.formulario .comentario {
+  padding: 10px;
+  font-weight: bold;
+  width: 80vw;
+}
+.formulario .boton.enviar {
+  margin: 40px;
+  width: 80vw;
+}
+
+.info-contacto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 30px;
+}
+.info-contacto h2 {
+  text-align: center;
+  font-weight: bold;
+  color: orangered;
+}
+.info-contacto p {
+  text-align: center;
+  font-weight: 600;
+}
+.info-contacto .mapa {
+  text-align: center;
+  width: auto;
+}
+.info-contacto .mapa iframe {
+  width: auto;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .formulario {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .formulario .nombre {
+    padding: 10px;
+    font-weight: bold;
+    width: 50vw;
+  }
+  .formulario .mail {
+    padding: 10px;
+    font-weight: bold;
+    width: 50vw;
+  }
+  .formulario .comentario {
+    padding: 10px;
+    font-weight: bold;
+    width: 50vw;
+  }
+  .formulario .boton.enviar {
+    margin: 40px;
+  }
+}
+.info-contacto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 30px;
+}
+.info-contacto h2 {
+  text-align: center;
+  font-weight: bold;
+  color: orangered;
+}
+.info-contacto p {
+  text-align: center;
+  font-weight: 600;
+}
+.info-contacto .mapa {
+  text-align: center;
+  width: 100%;
+}
+.info-contacto .mapa iframe {
+  width: 600px;
+  height: 420px;
+}
+
 #hero {
   display: flex;
   flex-flow: column nowrap;

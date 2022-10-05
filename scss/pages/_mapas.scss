@@ -1,0 +1,145 @@
+.articulo__mapas-mundo{
+    @include flex(column, wrap, center, center);
+    padding: 15px;
+    h2{
+        text-align: center;
+        font-weight: bold;
+        color: orangered;
+    }
+    .mapamundi{
+        text-align: center;
+        margin: 15px;
+        width: 90vw;
+        img{
+            border-radius: 15px;
+        }
+    }
+    p{
+    text-align: center;
+    }
+    
+}
+
+
+.articulo__ciudades{
+    @include flex(column, wrap, center, center);
+    padding: 15px;
+    .mapa-ciudad{
+        text-align: center;
+        padding: 15px;
+        img{
+            border-radius: 15px;
+            width: 80%;
+        }
+    }
+    h2{
+        text-align: center;
+        font-weight: bold;
+        color: orangered;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+
+.articulo__mazmorras{
+    @include flex(column, wrap, center, center);
+    padding: 15px;
+    h2{
+        text-align: center;
+        font-weight: bold;
+        color: orangered;
+    }
+    p{
+        text-align: center;
+    }
+    .mapa-mazmorra{
+        text-align: center;
+        padding: 15px;
+        img{
+            border-radius: 15px;
+            width: 80%;
+        }
+    }
+
+}
+
+
+
+//---------------------Empieza MediaQueri
+@media (min-width: 992px){
+    .articulo__mapas-mundo{
+        @include flex(row, wrap, center, center);
+        h2{
+            width: 100%;
+        }
+        .mapamundi{
+            text-align: center;
+            margin: 15px;
+            width: 80vw;
+        }
+        p{
+        text-align: start;
+        width: 90vw;
+        padding: 20px
+        }
+    }
+
+
+    .articulo__ciudades{
+        @include flex(row, wrap, center, center);
+        border-top: 1px solid black;
+        box-shadow: -1px -6px 14px 1px rgba(0,0,0,0.29);
+        padding: 15px;
+        .mapa-ciudad{
+            text-align: center;
+            width: 50vw;
+            img{
+                height: 800px;
+            }
+        }
+        h2{
+            width: 100%;
+            padding: 30px;
+        }
+        p{
+            text-align: end;
+            width: 45vw;
+            padding: 30px;
+        }
+    }
+
+
+    .articulo__mazmorras{
+        @include flex(row, wrap, center, center);
+        border-top: 1px solid black;
+        box-shadow: -1px -6px 14px 1px rgba(0,0,0,0.29);
+        h2{
+            width: 100%;
+            padding-bottom: 30px;
+        }
+        p{
+            text-align: start;
+            width: 60%;
+            padding: 15px;
+        }
+        .mapa-mazmorra{
+            text-align: center;
+            padding: 15px;
+            width: 40%;
+            img{
+                border-radius: 15px;
+                width: 100%;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+}//----------------------Fin MediaQueri 992px

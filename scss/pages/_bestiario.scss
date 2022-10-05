@@ -1,0 +1,47 @@
+.articulo_leer-ficha{
+    @include flex (column, wrap, center, center);
+    padding: 20px;
+
+    h2{
+        text-align: center;
+        font-weight: bold;
+        color: orangered;
+    }
+    .ficha-monstruo{
+        text-align: center;
+        padding: 15px;
+        img{
+            width: 100%;
+        }
+    }
+    p{
+        text-align: center;
+    }
+}
+
+
+.crear-monstruo{
+    @include flex (column, wrap, center, center);
+    padding: 20px;
+    border-top: 1px solid black;
+    box-shadow: -1px -6px 14px 1px rgba(0,0,0,0.29);
+
+    h2{
+        text-align: center;
+        font-weight: bold;
+        color: orangered;
+    }
+    .osolechuza{
+        text-align: center;
+        padding: 15px;
+        img{
+            width: 100%;
+            border-radius: 30px;
+        }
+    }
+    p{
+        text-align: center;
+    }
+}
+
+

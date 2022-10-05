@@ -1,0 +1,128 @@
+.section_objetos{
+    @include flex (column, wrap, center, center);
+    .articulo_crear-objeto{
+        @include flex (column, wrap, center, center);
+        padding: 15px;
+        margin: 20px;
+        h2{
+            text-align: center;
+            font-weight: bold;
+            color: orangered;
+        }
+        p{
+            text-align: center;
+        }
+        .botas{
+            text-align: center;
+            padding: 15px;
+            img{
+                border-radius: 30px;
+                width: auto;
+            }
+        }
+    }
+}
+
+.articulo_reliquias{
+    @include flex (column, wrap, center, center);
+    padding: 10px;
+    h2{
+        text-align: center;
+        font-weight: bold;
+        color: orangered;
+        margin: 10px
+    }
+    p{
+        text-align: center;
+    }
+    .collar{
+        text-align: center;
+        padding: 15px;
+        img{
+            border-radius: 30px;
+        }
+    }
+}
+
+.articulo_obj-comunidad{
+    @include flex (column, wrap, center, center);
+    padding: 10px;
+    h2{
+        text-align: center;
+        font-weight: bold;
+        color: orangered;
+    }
+    p{
+        text-align: center;
+    }
+    .anillo{
+        text-align: center;
+        padding: 15px;
+        .img-anillo{
+            border-radius: 30px;
+        }
+    }
+}
+
+
+
+//--------------Comienza MediaQueris
+@media (min-width: 992px){
+
+
+
+
+    .section_objetos{
+        @include flex (column, wrap, center, center);
+        .articulo_crear-objeto{
+            @include flex (row, wrap, center, center);
+            p{
+                text-align: end;
+            }
+            .botas{
+                margin: 15px;
+                float: right;
+                }
+            }
+        }
+    }
+
+    .articulo_reliquias{
+        @include flex (row, wrap, center, center);
+        border-top: 1px solid black;
+        box-shadow: -1px -6px 14px 1px rgba(0,0,0,0.29);
+        h2{
+            width: 100%;
+        }
+        p{
+            text-align: start;
+            width: 70%;
+            order: 2;
+        }
+        .collar{
+            width: 30%;
+            order: 1;
+        }
+    }
+    
+    .articulo_obj-comunidad{
+        @include flex (row, wrap, center, center);
+        border-top: 1px solid black;
+        box-shadow: -1px -6px 14px 1px rgba(0,0,0,0.29);
+        h2{
+        width: 100%;
+        }
+        p{
+            text-align: start;
+            width: 70%;
+        }
+        .anillo{
+            text-align: center;
+            width: 30%;
+        }
+    }
+
+
+
+
+//-----------------------Fin MediaQueri 992px

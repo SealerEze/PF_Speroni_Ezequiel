@@ -1,0 +1,107 @@
+h1{
+    text-align: center;
+    color: orangered;
+    font-weight: bold;
+}
+
+.formulario{
+    @include flex(column, wrap, center, center);
+    width: 100vw;
+
+    .nombre{
+        padding: 10px;
+        font-weight: bold;
+        width: 80vw;
+    }
+    .mail{
+        padding: 10px;
+        font-weight: bold;
+        width: 80vw;
+    }
+    .comentario{
+        padding: 10px;
+        font-weight: bold;
+        width: 80vw;
+    }
+    .boton.enviar{
+        margin: 40px;
+        width: 80vw;
+    }
+}
+
+
+.info-contacto{
+    @include flex(row, wrap, center, center);
+    margin: 30px;
+    padding: 30px;
+    h2{
+        text-align: center;
+        font-weight: bold;
+        color: orangered;
+    }
+    p{
+        text-align: center;
+        font-weight: 600;
+    }
+    .mapa{
+        text-align: center;
+        width: auto;
+        iframe{
+            width: auto;
+            height: auto;
+        }
+    }
+    
+}
+
+
+//--------------------------Empieza MediaQueris
+@media (min-width: 992px){
+    .formulario{
+        @include flex(column, wrap, center, center);
+        width: 100vw;
+        .nombre{
+            padding: 10px;
+            font-weight: bold;
+            width: 50vw;
+        }
+        .mail{
+            padding: 10px;
+            font-weight: bold;
+            width: 50vw;
+        }
+        .comentario{
+            padding: 10px;
+            font-weight: bold;
+            width: 50vw;
+        }
+        .boton.enviar{
+            margin: 40px;
+            
+        }
+    }
+}
+
+
+.info-contacto{
+    @include flex(row, wrap, center, center);
+    margin: 30px;
+    padding: 30px;
+    h2{
+        text-align: center;
+        font-weight: bold;
+        color: orangered;
+    }
+    p{
+        text-align: center;
+        font-weight: 600;
+    }
+    .mapa{
+        text-align: center;
+        width: 100%;
+        iframe{
+            width: 600px;
+            height: 420px;
+        }
+    }
+}
