@@ -8,7 +8,7 @@
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
-    url("../assets/imagenes/hero2.webp");
+    url("../assets/imagenes/hero2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -39,7 +39,7 @@
   .nosotros {
     margin: 15px 5px;
     border-radius: 25px;
-    width: 70%;
+    width: 55%;
     filter: grayscale(60%);
     transition: 0.2s;
   }

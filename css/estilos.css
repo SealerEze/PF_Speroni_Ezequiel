@@ -99,7 +99,7 @@ button:hover {
   margin: 20px;
   width: 80vw;
   max-width: 800px;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/imagenes/carta-uno.webp");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/imagenes/carta-uno.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -121,7 +121,7 @@ button:hover {
   margin: 20px;
   width: 80vw;
   max-width: 800px;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/imagenes/carta-dos.webp");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/imagenes/carta-dos.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -850,7 +850,7 @@ h1 {
   text-align: center;
   height: 90vh;
   color: white;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/imagenes/hero2.webp");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/imagenes/hero2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -885,7 +885,7 @@ h1 {
 .somos .nosotros {
   margin: 15px 5px;
   border-radius: 25px;
-  width: 70%;
+  width: 55%;
   filter: grayscale(60%);
   transition: 0.2s;
 }
