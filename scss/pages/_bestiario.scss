@@ -10,9 +10,16 @@
     .ficha-monstruo{
         text-align: center;
         padding: 15px;
+        filter: grayscale(60%);
+        transition: 0.2s;
         img{
             width: 100%;
         }
+    }
+    .ficha-monstruo:hover{
+        filter: grayscale(0);
+        scale: (1.05);
+
     }
     p{
         text-align: center;
@@ -33,15 +40,24 @@
     }
     .osolechuza{
         text-align: center;
-        padding: 15px;
+        padding: 15px; 
+        filter: grayscale(60%);
+        transition: 0.2s;
         img{
             width: 100%;
             border-radius: 30px;
+
         }
+    }
+    .osolechuza:hover{
+        filter: grayscale(0);
+        scale: (1.05);
     }
     p{
         text-align: center;
+
     }
 }
+
 
 

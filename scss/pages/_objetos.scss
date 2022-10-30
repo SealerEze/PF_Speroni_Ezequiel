@@ -11,14 +11,22 @@
         }
         p{
             text-align: center;
+            overflow: hidden;
         }
         .botas{
             text-align: center;
             padding: 15px;
+            filter: grayscale(60%);
+            transition: 0.2s;
             img{
                 border-radius: 30px;
                 width: auto;
             }
+            
+        }
+        .botas:hover{
+            filter: grayscale(0);
+            scale: (1.05);
         }
     }
 }
@@ -38,9 +46,16 @@
     .collar{
         text-align: center;
         padding: 15px;
+        filter: grayscale(60%);
+        transition: 0.2s;
         img{
             border-radius: 30px;
         }
+    }
+    .collar:hover{
+        filter: grayscale(0);
+        scale: (1.05);
+
     }
 }
 
@@ -58,9 +73,16 @@
     .anillo{
         text-align: center;
         padding: 15px;
+        filter: grayscale(60%);
+        transition: 0.2s;
         .img-anillo{
             border-radius: 30px;
         }
+    }
+    .anillo:hover{
+        filter: grayscale(0);
+        scale: (1.05);
+
     }
 }
 

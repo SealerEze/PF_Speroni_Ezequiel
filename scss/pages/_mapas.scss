@@ -78,6 +78,12 @@
             text-align: center;
             margin: 15px;
             width: 80vw;
+            filter: grayscale(60%);
+            transition: 0.2s;
+        }
+        .mapamundi:hover{
+            filter: grayscale(0);
+            scale: (1.05);
         }
         p{
         text-align: start;
@@ -95,9 +101,15 @@
         .mapa-ciudad{
             text-align: center;
             width: 50vw;
+            filter: grayscale(60%);
+            transition: 0.2s;
             img{
                 height: 800px;
             }
+        }
+        .mapa-ciudad:hover{
+                filter: grayscale(0);
+                scale: (1.05);
         }
         h2{
             width: 100%;
@@ -131,6 +143,12 @@
             img{
                 border-radius: 15px;
                 width: 100%;
+                filter: grayscale(60%);
+                transition: 0.2s;
+            }
+            img:hover{
+                filter: grayscale(0);
+                scale: (1.05);
             }
         }
     }

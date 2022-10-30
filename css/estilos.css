@@ -39,7 +39,7 @@ a {
 }
 
 a:link {
-  color: aliceblue;
+  color: orange;
 }
 
 a:visited {
@@ -68,11 +68,30 @@ button {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   color: orangered;
   background-color: aliceblue;
+  transition: all 0.2s;
 }
 
 button:hover {
   background-color: orangered;
   color: aliceblue;
+}
+
+.buttondos {
+  width: auto;
+  height: 50px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  color: crimson;
+  background-color: black;
+  transition: ease-in-out 0.5s;
+}
+
+.buttondos:hover {
+  background-color: orangered;
+  color: aliceblue;
+  scale: 1.2;
 }
 
 .carta-uno {
@@ -141,6 +160,19 @@ button:hover {
   display: none;
 }
 
+.dydbeyond {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.dydbeyond h2 {
+  text-align: center;
+  font-weight: bold;
+  color: orangered;
+}
+
 @media (min-width: 992px) {
   .caja-cartas {
     display: flex;
@@ -155,6 +187,7 @@ button:hover {
   .caja-cartas .carta-uno .texto {
     display: block;
     color: aliceblue;
+    overflow: hidden;
   }
   .carta-dos {
     width: 30%;
@@ -163,10 +196,12 @@ button:hover {
   .carta-dos .texto {
     display: block;
     color: aliceblue;
+    overflow: hidden;
   }
   .carta-tres {
     width: 30%;
     height: 700px;
+    overflow: hidden;
   }
   .carta-tres .texto {
     display: block;
@@ -187,6 +222,7 @@ button:hover {
   .caja-cartas .carta-uno .texto {
     display: block;
     color: aliceblue;
+    overflow: hidden;
   }
   .carta-dos {
     width: 30%;
@@ -206,27 +242,48 @@ button:hover {
   }
 }
 .footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-between;
+  height: auto;
+  width: 100%;
   background-image: linear-gradient(to right, #994c0d 0%, rgb(0, 0, 0) 100%);
   background-blend-mode: multiply, multiply;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+  padding: 8px;
+  align-content: space-between;
 }
 .footer .list-footer {
-  display: inline-block;
-  margin: auto;
-  padding: 8px;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: 5px;
+  padding: 10px;
+  width: 50%;
+}
+.footer h2 {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.footer p {
+  color: aliceblue;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
-  .footer .list-footer {
-    display: inline;
-    flex-flow: row;
-    justify-content: space-between;
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
     align-items: baseline;
-    margin: 50px;
-    padding: 8px;
+    align-content: space-around;
+  }
+  .footer .list-footer {
+    width: 60%;
   }
 }
 .header {
@@ -258,12 +315,14 @@ button:hover {
   border: solid aliceblue 1px;
   border-radius: 15px;
   box-shadow: 5px 5px 3px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s;
 }
 .header .container .nav a:hover {
   background-color: orangered;
   border: 1px solid black;
   border-radius: 15px;
   color: aliceblue;
+  transform: scale(1.1);
 }
 .header .container .logo {
   margin: 0;
@@ -273,6 +332,7 @@ button:hover {
   font-size: 2.5em;
   text-align: center;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s;
 }
 .header .container .logo .dado {
   width: 50px;
@@ -303,9 +363,15 @@ button:hover {
 .articulo_leer-ficha .ficha-monstruo {
   text-align: center;
   padding: 15px;
+  filter: grayscale(60%);
+  transition: 0.2s;
 }
 .articulo_leer-ficha .ficha-monstruo img {
   width: 100%;
+}
+.articulo_leer-ficha .ficha-monstruo:hover {
+  filter: grayscale(0);
+  scale: 1.05;
 }
 .articulo_leer-ficha p {
   text-align: center;
@@ -328,10 +394,16 @@ button:hover {
 .crear-monstruo .osolechuza {
   text-align: center;
   padding: 15px;
+  filter: grayscale(60%);
+  transition: 0.2s;
 }
 .crear-monstruo .osolechuza img {
   width: 100%;
   border-radius: 30px;
+}
+.crear-monstruo .osolechuza:hover {
+  filter: grayscale(0);
+  scale: 1.05;
 }
 .crear-monstruo p {
   text-align: center;
@@ -423,6 +495,12 @@ button:hover {
     text-align: center;
     margin: 15px;
     width: 80vw;
+    filter: grayscale(60%);
+    transition: 0.2s;
+  }
+  .articulo__mapas-mundo .mapamundi:hover {
+    filter: grayscale(0);
+    scale: 1.05;
   }
   .articulo__mapas-mundo p {
     text-align: start;
@@ -441,9 +519,15 @@ button:hover {
   .articulo__ciudades .mapa-ciudad {
     text-align: center;
     width: 50vw;
+    filter: grayscale(60%);
+    transition: 0.2s;
   }
   .articulo__ciudades .mapa-ciudad img {
     height: 800px;
+  }
+  .articulo__ciudades .mapa-ciudad:hover {
+    filter: grayscale(0);
+    scale: 1.05;
   }
   .articulo__ciudades h2 {
     width: 100%;
@@ -479,6 +563,12 @@ button:hover {
   .articulo__mazmorras .mapa-mazmorra img {
     border-radius: 15px;
     width: 100%;
+    filter: grayscale(60%);
+    transition: 0.2s;
+  }
+  .articulo__mazmorras .mapa-mazmorra img:hover {
+    filter: grayscale(0);
+    scale: 1.05;
   }
 }
 .section_objetos {
@@ -502,14 +592,21 @@ button:hover {
 }
 .section_objetos .articulo_crear-objeto p {
   text-align: center;
+  overflow: hidden;
 }
 .section_objetos .articulo_crear-objeto .botas {
   text-align: center;
   padding: 15px;
+  filter: grayscale(60%);
+  transition: 0.2s;
 }
 .section_objetos .articulo_crear-objeto .botas img {
   border-radius: 30px;
   width: auto;
+}
+.section_objetos .articulo_crear-objeto .botas:hover {
+  filter: grayscale(0);
+  scale: 1.05;
 }
 
 .articulo_reliquias {
@@ -531,9 +628,15 @@ button:hover {
 .articulo_reliquias .collar {
   text-align: center;
   padding: 15px;
+  filter: grayscale(60%);
+  transition: 0.2s;
 }
 .articulo_reliquias .collar img {
   border-radius: 30px;
+}
+.articulo_reliquias .collar:hover {
+  filter: grayscale(0);
+  scale: 1.05;
 }
 
 .articulo_obj-comunidad {
@@ -554,9 +657,15 @@ button:hover {
 .articulo_obj-comunidad .anillo {
   text-align: center;
   padding: 15px;
+  filter: grayscale(60%);
+  transition: 0.2s;
 }
 .articulo_obj-comunidad .anillo .img-anillo {
   border-radius: 30px;
+}
+.articulo_obj-comunidad .anillo:hover {
+  filter: grayscale(0);
+  scale: 1.05;
 }
 
 @media (min-width: 992px) {
@@ -776,7 +885,13 @@ h1 {
 .somos .nosotros {
   margin: 15px 5px;
   border-radius: 25px;
-  width: 50%;
+  width: 70%;
+  filter: grayscale(60%);
+  transition: 0.2s;
+}
+.somos .nosotros:hover {
+  filter: grayscale(0);
+  scale: 1.05;
 }
 
 .articulo-uno {
@@ -854,6 +969,12 @@ h1 {
     display: block;
     width: 35%;
     border-radius: 30px;
+    filter: grayscale(60%);
+    transition: 0.2s;
+  }
+  .articulo-uno .lo-basico .cara-dos:hover {
+    filter: grayscale(0);
+    scale: 1.03;
   }
 }
 @media (min-width: 1200px) {

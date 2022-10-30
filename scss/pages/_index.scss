@@ -39,7 +39,13 @@
   .nosotros {
     margin: 15px 5px;
     border-radius: 25px;
-    width: 50%;
+    width: 70%;
+    filter: grayscale(60%);
+    transition: 0.2s;
+  }
+  .nosotros:hover{
+    filter: grayscale(0);
+    scale: (1.05);
   }
 }
 
@@ -111,6 +117,13 @@
             display: block;
             width: 35%;
             border-radius: 30px;
+            filter: grayscale(60%);
+            transition: 0.2s;
+          }
+          .cara-dos:hover{
+            filter: grayscale(0);
+            scale: (1.03);
+            
           }
         }
 }
